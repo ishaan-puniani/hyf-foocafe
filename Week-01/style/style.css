@@ -1,0 +1,12 @@
+
+div {
+    color:red ;
+}
+
+#female{
+    color: pink;
+    width: 100px;
+}
+#female .subLable{
+    color: purple;
+}
