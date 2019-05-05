@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <style>
+        .container {
+            color: red;
+            font-size: 32px;
+            border: 1px solid blue;
+            margin-top: 100px;
+        }
+
+        .child {
+            color: blue;
+        }
+
+        .menu {
+            background: aqua;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+        }
+
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        /* On screens that are 992px wide or less, the background color is blue */
+        @media screen and (max-width: 992px) {
+            body {
+                background-color: azure;
+                color: black;
+            }
+
+            .menu ul li {
+                float: left;
+                list-style-type: none;
+                padding: 10px;
+                margin: 5px;
+            }
+
+            .menu>ul>li:first-child {
+                color: red;
+            }
+
+            .menuFlex ul {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+        }
+
+        /* On screens that are 992px wide or less, the background color is blue */
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: red;
+                color: wheat;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="menu">
+        hello
+        <ul>
+            <li>Menu 1</li>
+            <li>
+                <ul>
+                    <li>Sub Menu 1</li>
+                    <li>Sub Menu 2</li>
+                    <li>Sub Menu 3</li>
+                </ul>
+            </li>
+            <li>Menu 3</li>
+        </ul>
+    </div> -->
+    <div class="menuFlex">
+        <ul>
+            <li>Menu 1</li>
+            <li>
+                menu 2
+            </li>
+            <li>Menu 3</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="child">
+            world
+        </div>
+    </div>
+</body>
+
+</html>
