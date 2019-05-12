@@ -1,6 +1,52 @@
 <html>
-    <body>
-        <h1>Hell</h1>
-        <h1><a href="./hw1/index.html">Day 1</a></h1>
-    </body>
+
+<body>
+    <style>
+        table {
+            width: 100%;
+        }
+        table thead td {
+            border: 2px solid green;
+        }
+        table td {
+            border: 1px solid red;
+        }
+        table tr td {
+            border-bottom: 2px solid blue;
+        }
+        thead {
+            background: lightblue;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+    <h1>Hell</h1>
+    <h1><a href="./hw1/index.html">Day 1</a></h1>
+    <table>
+        <thead>
+            <tr>
+                <th>col1</th>
+                <th>col2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">val 1</td>
+            </tr>
+            <tr>
+                <td>val 1</td>
+                <td>val 2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">val 1</td>
+                <td>val 2</td>
+            </tr>
+            <tr>
+                <td>val 1</td>
+                <td>val 2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
 </html>
